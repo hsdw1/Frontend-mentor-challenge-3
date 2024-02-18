@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+    overflow: hidden
+ 
+}
+
+body {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkCyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 37vh right 51vw, top 53vh left 48vw;
+}
+
+.container {
+    width: 326px;
+    height: 375px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.upperPart {
+    height: 286px;
+}
+
+.banner {
+    height: 141px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+}
+
+.photo {
+    background-color: white;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 87px;
+    left: 35%;
+}
+
+.mainLine {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.secondLine {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.age {   
+    margin-left: 5px;
+}
+
+
+.bold {
+    color: var(--VeryDarkDesaturatedBlue);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.lowerPart {
+    height: 89px;
+    border-top: solid 1px var(--DarkGray);
+}
+
+.profileInfo{
+    letter-spacing: .1rem;
+    height: 89px;
+    margin: 0 44px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.data {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gray {
+    color: var(--DarkGrayishBlue)
+}
+.stat {
+    font-size: 11px;
+}
+
+@media screen and (min-width: 1440px) {
+
+.container {
+    margin: 174px auto;
+    width: 350px;
+}
+}
